@@ -53,7 +53,7 @@ tabs.forEach(tab => {
 
 const swiperReviews = new Swiper(".swiper-reviews", {
     grabCursor: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
 
     navigation: {
@@ -108,7 +108,7 @@ swiperReviews.on('slideChange', function() {
 
   const swiperVideos = new Swiper(".swiper-videos", {
     grabCursor: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
 
     navigation: {
@@ -183,7 +183,7 @@ swiperTeam.on('slideChange', function() {
 
  const swiperCoursesOne = new Swiper(".courses-swiper-one", {
     grabCursor: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
 
     navigation: {

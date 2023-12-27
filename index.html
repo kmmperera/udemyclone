@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="./inc/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
 </head>
 
 <body>
@@ -43,36 +44,41 @@
                 <p>Whatsapp Us</p>
             </div>
             <div class="hamburger-icon">
-                Menu
+                <i class="fa-solid fa-bars"></i>
             </div>
             <div class="mobile-menu-wrapper">
-                <div class="hamburger-close">
-                    Close
-                </div>
-                <ul class="mobile-menu-ul">
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Home</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Contact Us</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">About Us</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Our Courses</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Facebook Groups</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Prices</a>
-                    </li>
-                    <li class="mobile-menu-li">
-                        <a class="mobile-menu-a" href="">Home</a>
-                    </li>
+                <div class="mobile-menu-area">
+                    <div class="hamburger-close">
+                            <i class="fa-regular fa-rectangle-xmark"></i>
+                    </div>
+                    <ul class="mobile-menu-ul">
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Home</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Contact Us</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">About Us</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Our Courses</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Facebook Groups</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Prices</a>
+                        </li>
+                        <li class="mobile-menu-li">
+                            <a class="mobile-menu-a" href="">Home</a>
+                        </li>
 
-                </ul>
+                    </ul>
+                </div>
+                <div class="mobile-menu-bg-modal">
+
+                </div>
             </div>
 
         </div>
@@ -140,7 +146,17 @@
                     </div>
 
                 </div>
+                <div class="header-search other-search">
+
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" placeholder="Search for anything">
+                </div>
             </div>
+
+
+
         </div>
 
         <div class="badges-section">
@@ -1166,122 +1182,127 @@
             <div class="team-wrapper">
                 <div class="swiper-container">
 
-               
-                <div class="swiper our-team-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="team-member">
-                               <div class="team-member-img">
-                                   <img src="./inc/image/ayomi.jpg" alt="">
-                               </div>
-                               <div class="team-member-name">
-                                    Ayomi <br/> Jayasinghe
-                               </div>
-                               <div class="team-member-description">
-                                    Psycology 
-                               </div>
-                               <div class="team-member-price">
-                                   Rs.1000 per 2 hours
-                               </div>
-                               <div class="more-info-instructor">
-                                   More info
-                               </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-member">
+
+                    <div class="swiper our-team-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="team-member">
                                     <div class="team-member-img">
-                                            <img src="./inc/image/ayomi.jpg" alt="">
-                                        </div>
-                                        <div class="team-member-name">
-                                             Ayomi <br/> Jayasinghe
-                                        </div>
-                                        <div class="team-member-description">
-                                             Psycology 
-                                        </div>
-                                        <div class="team-member-price">
-                                            Rs.1000 per 2 hours
-                                        </div>
-                                        <div class="more-info-instructor">
-                                            More info
-                                        </div>
+                                        <img src="./inc/image/ayomi.jpg" alt="">
+                                    </div>
+                                    <div class="team-member-name">
+                                        Ayomi
+                                        <br/> Jayasinghe
+                                    </div>
+                                    <div class="team-member-description">
+                                        Psycology
+                                    </div>
+                                    <div class="team-member-price">
+                                        Rs.1000 per 2 hours
+                                    </div>
+                                    <div class="more-info-instructor">
+                                        More info
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-member">
+                            <div class="swiper-slide">
+                                <div class="team-member">
                                     <div class="team-member-img">
-                                            <img src="./inc/image/ayomi.jpg" alt="">
-                                        </div>
-                                        <div class="team-member-name">
-                                             Ayomi <br/> Jayasinghe
-                                        </div>
-                                        <div class="team-member-description">
-                                             Psycology 
-                                        </div>
-                                        <div class="team-member-price">
-                                            Rs.1000 per 2 hours
-                                        </div>
-                                        <div class="more-info-instructor">
-                                            More info
-                                        </div>
+                                        <img src="./inc/image/ayomi.jpg" alt="">
+                                    </div>
+                                    <div class="team-member-name">
+                                        Ayomi
+                                        <br/> Jayasinghe
+                                    </div>
+                                    <div class="team-member-description">
+                                        Psycology
+                                    </div>
+                                    <div class="team-member-price">
+                                        Rs.1000 per 2 hours
+                                    </div>
+                                    <div class="more-info-instructor">
+                                        More info
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-member">
+                            <div class="swiper-slide">
+                                <div class="team-member">
                                     <div class="team-member-img">
-                                            <img src="./inc/image/ayomi.jpg" alt="">
-                                        </div>
-                                        <div class="team-member-name">
-                                             Ayomi <br/> Jayasinghe
-                                        </div>
-                                        <div class="team-member-description">
-                                             Psycology 
-                                        </div>
-                                        <div class="team-member-price">
-                                            Rs.1000 per 2 hours
-                                        </div>
-                                        <div class="more-info-instructor">
-                                            More info
-                                        </div>
+                                        <img src="./inc/image/ayomi.jpg" alt="">
+                                    </div>
+                                    <div class="team-member-name">
+                                        Ayomi
+                                        <br/> Jayasinghe
+                                    </div>
+                                    <div class="team-member-description">
+                                        Psycology
+                                    </div>
+                                    <div class="team-member-price">
+                                        Rs.1000 per 2 hours
+                                    </div>
+                                    <div class="more-info-instructor">
+                                        More info
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="team-member">
+                            <div class="swiper-slide">
+                                <div class="team-member">
                                     <div class="team-member-img">
-                                            <img src="./inc/image/ayomi.jpg" alt="">
-                                        </div>
-                                        <div class="team-member-name">
-                                             Ayomi <br/> Jayasinghe
-                                        </div>
-                                        <div class="team-member-description">
-                                             Psycology 
-                                        </div>
-                                        <div class="team-member-price">
-                                            Rs.1000 per 2 hours
-                                        </div>
-                                        <div class="more-info-instructor">
-                                            More info
-                                        </div>
+                                        <img src="./inc/image/ayomi.jpg" alt="">
+                                    </div>
+                                    <div class="team-member-name">
+                                        Ayomi
+                                        <br/> Jayasinghe
+                                    </div>
+                                    <div class="team-member-description">
+                                        Psycology
+                                    </div>
+                                    <div class="team-member-price">
+                                        Rs.1000 per 2 hours
+                                    </div>
+                                    <div class="more-info-instructor">
+                                        More info
+                                    </div>
+                                </div>
                             </div>
+                            <div class="swiper-slide">
+                                <div class="team-member">
+                                    <div class="team-member-img">
+                                        <img src="./inc/image/ayomi.jpg" alt="">
+                                    </div>
+                                    <div class="team-member-name">
+                                        Ayomi
+                                        <br/> Jayasinghe
+                                    </div>
+                                    <div class="team-member-description">
+                                        Psycology
+                                    </div>
+                                    <div class="team-member-price">
+                                        Rs.1000 per 2 hours
+                                    </div>
+                                    <div class="more-info-instructor">
+                                        More info
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
 
 
                     </div>
-                   
+
+
+                    <div class="team-custom-button-prev arrow-buttons-style">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="team-custom-button-next arrow-buttons-style">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+
 
                 </div>
-
-               
-                        <div class="team-custom-button-prev arrow-buttons-style">
-                                <i class="fa-solid fa-chevron-left"></i>
-                        </div>
-                        <div class="team-custom-button-next arrow-buttons-style">
-                                <i class="fa-solid fa-chevron-right"></i>
-                        </div>
-
-                   
-
-            </div>
             </div>
         </div>
 
@@ -1292,12 +1313,12 @@
                 </div>
                 <div class="join-us-right">
                     <h1>
-                            Become an instructor
+                        Become an instructor
 
                     </h1>
                     <p>
-                        Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills
-                        to teach what you love.
+                        Instructors from around the world teach millions of learners on Udemy. We provide the tools and skills to teach what you
+                        love.
 
                     </p>
                     <div class="start-teaching-btn dark-btn">
@@ -1415,6 +1436,7 @@
     <script src="./inc/js/main.js">
 
     </script>
+
 
 </body>
 
