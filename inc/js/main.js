@@ -213,7 +213,7 @@ swiperCoursesOne.on('slideChange', function() {
  
   const swiperCoursesTwo = new Swiper(".courses-swiper-two", {
     grabCursor: true,
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 30,
 
     navigation: {
@@ -234,10 +234,10 @@ swiperCoursesTwo.on('slideChange', function() {
     let realIndex = swiperCoursesTwo.realIndex;
     if (realIndex == 0) {
      
-        document.querySelector(".courses-swiper-two .courses-two-custom-button-prev").style.display = "none";
+        document.querySelector(".courses-two-custom-button-prev").style.display = "none";
     } else {
      
-      document.querySelector(".courses-swiper-two .courses-two-custom-button-prev").style.display = "block";
+      document.querySelector(".courses-two-custom-button-prev").style.display = "block";
     }
   });
  
@@ -265,10 +265,10 @@ swiperCoursesThree.on('slideChange', function() {
     let realIndex = swiperCoursesThree.realIndex;
     if (realIndex == 0) {
      
-        document.querySelector(".courses-swiper-three .courses-three-custom-button-prev").style.display = "none";
+        document.querySelector(".courses-three-custom-button-prev").style.display = "none";
     } else {
      
-      document.querySelector(".courses-swiper-three .courses-three-custom-button-prev").style.display = "block";
+      document.querySelector(".courses-three-custom-button-prev").style.display = "block";
     }
   });
 
@@ -295,10 +295,10 @@ swiperCoursesFour.on('slideChange', function() {
     let realIndex = swiperCoursesFour.realIndex;
     if (realIndex == 0) {
      
-        document.querySelector(".courses-swiper-four .courses-four-custom-button-prev").style.display = "none";
+        document.querySelector(".courses-four-custom-button-prev").style.display = "none";
     } else {
      
-      document.querySelector(".courses-swiper-four .courses-four-custom-button-prev").style.display = "block";
+      document.querySelector(".courses-four-custom-button-prev").style.display = "block";
     }
   });
 
@@ -325,10 +325,10 @@ swiperCoursesFive.on('slideChange', function() {
     let realIndex = swiperCoursesFive.realIndex;
     if (realIndex == 0) {
      
-        document.querySelector(".courses-swiper-five .courses-five-custom-button-prev").style.display = "none";
+        document.querySelector(".courses-five-custom-button-prev").style.display = "none";
     } else {
      
-      document.querySelector(".courses-swiper-five .courses-five-custom-button-prev").style.display = "block";
+      document.querySelector(".courses-five-custom-button-prev").style.display = "block";
     }
   });
 

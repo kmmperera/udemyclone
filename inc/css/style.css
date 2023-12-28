@@ -117,6 +117,9 @@ body{
     background-color: #fff;
     height: 100%;
     padding: 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .mobile-menu-ul{
     list-style: none;
@@ -152,6 +155,31 @@ body{
     color: #5624d0;
     cursor: pointer;
 }
+.mobile-menu-footer{
+   
+  
+}
+.whatsapp-btn{
+    height: 40px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 14px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 24px;
+
+}
+.tele-number{
+    margin: 0px auto;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
 @media (max-width:567px){
     .header-wrapper{
         max-width: 550px;
@@ -437,7 +465,7 @@ body{
         border: none;
         padding: 32px 10px 0px 10px;
     }
-    .courses-swiper-one .swiper-wrapper .swiper-slide{
+    .courses-swiper-one .swiper-wrapper .swiper-slide ,.courses-swiper-two .swiper-wrapper .swiper-slide{
         width: 70%;
       
     }
